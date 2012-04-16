@@ -1,4 +1,4 @@
-# Copyright (C) 2011 Philter Phactory Ltd.
+# Copyright (C) 2012 Philter Phactory Ltd.
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -22,48 +22,38 @@
 # dealings in this Software without prior written authorization from Philter
 # Phactory Ltd.
 
+verb_options = ("floating",
+                "drifting",
+                "bouncing",
+                "glitching")
 
-verb = ("floating",
-                      "drifting",
-                      "bouncing",
-                      "glitching")
-
-
-
-style = ("pixellated",
-                          "vectorized",
-                          "gliltched")
+style_options = ("pixellated",
+                 "vectorized",
+                 "gliltched")
 
 #formats must be pluralised
-format = ("model",
-                          "robots",
-                          "iphone",
-                          "laptop",
-                          "portrait",
-                          "coffee cup")
+format_options = ("model",
+                  "robots",
+                  "iphone",
+                  "laptop",
+                  "portrait",
+                  "coffee cup")
                           
+connected_options = ("of a",
+                     "from a",
+                     "in a",
+                     "by a ",
+                     "on a ")
 
+adjective_options = ("3D",
+                     "caressing",
+                     "floating",
+                     "chirpy",
+                     "elongated",
+                     "hand crafted")
 
-connected = ("of a",
-                          "from a",
-                          "in a",
-                          "by a ",
-                          "on a ")
-
-adjective = ("3D",
-                          "caressing",
-                          "floating",
-                          "chirpy",
-                          "elongated",
-
-                          "hand crafted")
-
-thing = ("infomorph",
-                          "balloon",
-                          "anfroid",
-                          "movie",
-                          "ham")
-
-
-
-
+thing_options = ("infomorph",
+                 "balloon",
+                 "anfroid",
+                 "movie",
+                 "ham")

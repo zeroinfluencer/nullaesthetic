@@ -1,4 +1,4 @@
-# Copyright (C) 2011 Philter Phactory Ltd.
+# Copyright (C) 2011, 2012 Philter Phactory Ltd.
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -27,11 +27,10 @@ import re
 
 from base_prosthetic import Prosthetic
 
-import recipeer
+import nullaesthetic
 import models
 
-
-class Recipeer(Prosthetic):
+class NullAesthetic(Prosthetic):
     '''A prosthetic that publishes Null Aesthetics conjectures.'''
 
     @classmethod
@@ -42,21 +41,16 @@ class Recipeer(Prosthetic):
         state = self.get("/1/weavr/state/")
         if not state["awake"]:
             return "Not posting nullaesthetic, asleep"
-
-        try:
-            recipe, details, total_price, total_calories = recipeer.random_recipe()
-            details_model = models.MealDetails(weavr_token=self.token, cost=total_price, calories=total_calories)
-            details_model.save()
-        except recipeer.NoIngredientsException, e:
-            return "No ingredients could be found matching recipe."
-
-        logging.info("posting nullaesthetic: %s" % recipe)
-        logging.info("with details: %s"%details)
-
+        
+        aesthetic = nullaesthetic.null_aesthetic()
+        
+        logging.info("posting nullaesthetic: %s" % aesthetic)
+        
         self.post("/1/weavr/post/", {
             "category":"article",
-            "title":nullaesthetical,
-            "body":unicode(details), 
+            "title":"Null Aesthetic",
+            "body":unicode(aesthetic), 
             "keywords":state["emotion"],
         })
-        return unicode(recipe)
+        
+        return unicode(aesthetic)
