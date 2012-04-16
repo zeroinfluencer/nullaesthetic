@@ -102,20 +102,20 @@ Examples
 
 #21q 2 drifting raster portraits of a 3D 8alloon D09 colored from #332231 to #2112cc
 #66e 44 bouncin9 4temp0rial glitcHes in a 5mall artificial phone colored from #2311aa to #c0c0c0
-#42r 23 fading Arduino ro8ots of a QR code 
-#33t 19 jumpy post-digit4l movies in a caressing biosph3r3
-#41r 3 insi5tant body 5ensors from a gothic flashmob
-#41r 9 plucky dRone cam3ras on a sweaty drone
-#41r 12 gaudy raster cameras 0n a chilled drone
-#41r 9 sticky p0st-digital cameras on a sw3aty drone
-#41r 23 fl04ty movie gadgets in a neurotic drone
-#41r 12 snappy electron1c disc-drive5 in a slOppy ebook
-#41r 6 beeping drone TVs on a stealth magnet
-#41r 76 gur9l1ng movie gAdgets around a synthesISed iphone
-#41r 54 neon glItches repelled by a neur0tic laptop
-#41r 34 neon drone CCTV cameras binded to a neurotic laptop
-#41r 46 ble3p1n9 pixela7ed droids attr4cted by a neuroTic laptop
-#41r 26 drifting vector jumpers welded to a neurotic pixel
+#42r 23 fading Arduino ro8ots of a QR code colored from #2311aa to #c0c0c0
+#33t 19 jumpy post-digit4l movies in a caressing biosph3r3 colored from #2311aa to #c0c0c0
+#41r 3 insi5tant body 5ensors from a gothic flashmob colored from #2311aa to #c0c0c0
+#41r 9 plucky dRone cam3ras on a sweaty drone colored from #2311aa to #c0c0c0
+#41r 12 gaudy raster cameras 0n a chilled drone colored from #2311aa to #c0c0c0
+#41r 9 sticky p0st-digital cameras on a sw3aty drone colored from #2311aa to #c0c0c0
+#41r 23 fl04ty movie gadgets in a neurotic drone colored from #2311aa to #c0c0c0
+#41r 12 snappy electron1c disc-drive5 in a slOppy ebook colored from #2311aa to #c0c0c0
+#41r 6 beeping drone TVs on a stealth magnet colored from #2311aa to #c0c0c0
+#41r 76 gur9l1ng movie gAdgets around a synthesISed iphone colored from #2311aa to #c0c0c0
+#41r 54 neon glItches repelled by a neur0tic laptop colored from #2311aa to #c0c0c0
+#41r 34 neon drone CCTV cameras binded to a neurotic laptop colored from #2311aa to #c0c0c0
+#41r 46 ble3p1n9 pixela7ed droids attr4cted by a neuroTic laptop colored from #2311aa to #c0c0c0
+#41r 26 drifting vector jumpers welded to a neurotic pixel colored from #2311aa to #c0c0c0
 #41r 11 floating pixelated buildings under a neurotic coffee-maker colored from #2311aa to #c0c0c0
 #41r 11 burnin9 pixelat3d maps under a chirpy t0aster colored from #2311aa to #c0c0c0
 

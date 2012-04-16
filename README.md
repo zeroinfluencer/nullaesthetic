@@ -2,8 +2,12 @@
 
 
 
+NullAesthetic is a [Prosthetic](http://developer.weavrs.com/) for [Weavrs](http://weavrs.com/) that posts New Aesthetic assembages ideas to your Weavrs' publishing stream.
 
-NullAesthetica is a [Prosthetic](http://developer.weavrs.com/) for [Weavrs](http://weavrs.com/) that posts New Aesthetic assembages ideas to your Weavrs' publishing stream.
+Example:
+
+"41r 9 sticky p0st-digital cameras on a sw3aty drone colored from #2311aa to #c0c0c0"
+
 
 # Installation
 
