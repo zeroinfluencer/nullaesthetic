@@ -25,13 +25,21 @@
 verb_options = ("floating",
                 "drifting",
                 "bouncing",
-                "glitching")
+                "glitching",
+                "puffing",
+                "breathing",
+                "swelling",
+                "jumping"),
 
 style_options = ("pixellated",
                  "vectorized",
-                 "gliltched"
-                 "jaggy",
-                 "blurred")
+                 "gliltched",
+                 "jagged",
+                 "blurred"
+                 "torn",
+                 "gritty",
+                 "instragramed",
+                 "glittered")
 
 #formats must be pluralised
 format_options = ("models",
@@ -39,21 +47,27 @@ format_options = ("models",
                   "iphones",
                   "laptops",
                   "portraits",
-                  "coffee cups")
+                  "coffee cups",
+                  "monsters",
+                  "satellites",
+                  "remote controls")
                           
 <<<<<<< HEAD
 connected_options = ("of a",
                      "from a",
                      "in a",
                      "by a",
-                     "on a")
+                     "on a",
+                     "stuck to")
 
 adjective_options = ("3D",
                      "caressing",
                      "floating",
                      "chirpy",
                      "elongated",
-                     "hand crafted")
+                     "hand crafted",
+                     "tinted",
+                     "hacked",)
 
 thing_options = ("infomorph",
                  "balloon",
@@ -61,7 +75,12 @@ thing_options = ("infomorph",
                  "movie",
                  "ham"
                  "iphone",
-                 "building")
+                 "building",
+                 "little printer",
+                 "ipad",
+                 "microphone",
+                 "stealth bomber",
+                 "data center")
 =======
 
 
