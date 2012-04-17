@@ -140,7 +140,7 @@ def amount():
 
 def aesthetic_description():
     adj = adjective()
-    items = [ amount(), verb(), style(), a_format(), connected(adj), adj,
+    items = [amount(), verb(), style(), a_format(), connected(adj), adj,
              thing(), color_range()]
     description = " ".join(filter(bool, items)) + "."
     return "%s %s" % (md5(description), description)
