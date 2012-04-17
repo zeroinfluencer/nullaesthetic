@@ -136,11 +136,11 @@ def thing():
 #    return maybe_choose_one_of(models.AestheticOptions.get_option('tag'))
 
 def amount():
-    return str(random.randint(1, 50))
+    return str(random.randint(2, 99))
 
 def aesthetic_description():
     adj = adjective()
-    items = [verb(), amount(), style(), a_format(), connected(adj), adj,
+    items = [ amount(), verb(), style(), a_format(), connected(adj), adj,
              thing(), color_range()]
     description = " ".join(filter(bool, items)) + "."
     return "%s %s" % (md5(description), description)
