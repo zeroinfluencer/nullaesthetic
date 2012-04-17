@@ -41,7 +41,7 @@ style_options = ("pixellated",
                  "vectorized",
                  "glitched",
                  "jagged",
-                 "blurred"
+                 "blurred",
                  "torn",
                  "gritty",
                  "instragramed",
