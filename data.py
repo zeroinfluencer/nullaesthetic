@@ -54,7 +54,9 @@ style_options = ("pixellated",
                  "x-rayed",
                  "CC licenced",
                  "bookmarked",
-                 "post-digital")
+                 "post-digital",
+                 "rasterised",
+                 "disjointed")
 
 #formats must be pluralised
 format_options = ("models",
@@ -65,7 +67,7 @@ format_options = ("models",
                   "coffee cups",
                   "monsters",
                   "satellites",
-                  "remote controls"
+                  "remote controls",
                   "political parties")
 
 connected_options = ("of a",
@@ -73,7 +75,9 @@ connected_options = ("of a",
                      "in a",
                      "by a",
                      "on a",
-                     "stuck to a")
+                     "stuck to a",
+                     "bolted to a",
+                     "joined to")
 
 adjective_options = ("3D",
                      "caressing",
@@ -87,7 +91,17 @@ adjective_options = ("3D",
                      "laughing"
                      "sneering",
                      "smelly",
-                     "stinky")
+                     "stinky",
+                     "invisble",
+                     "stealth",
+                     "transparent",
+                     "cloudy",
+                     "opaque",
+                     "needy",
+                     "joyful",
+                     "pretty",
+                     "hammered",
+                     "flexible")
 
 thing_options = ("infomorph",
                  "balloon",
