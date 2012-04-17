@@ -29,17 +29,32 @@ verb_options = ("floating",
                 "puffing",
                 "breathing",
                 "swelling",
-                "jumping"),
+                "jumping"
+                "oozing",
+                "hovering",
+                "repelling",
+                "attracting",
+                "wiggly",
+                "upside down"),
 
 style_options = ("pixellated",
                  "vectorized",
-                 "gliltched",
+                 "glitched",
                  "jagged",
                  "blurred"
                  "torn",
                  "gritty",
                  "instragramed",
-                 "glittered")
+                 "glittered",
+                 "atemporial",
+                 "fabbed",
+                 "printed",
+                 "glitchy",
+                 "scanned",
+                 "x-rayed",
+                 "CC licenced",
+                 "bookmarked",
+                 "post-digital")
 
 #formats must be pluralised
 format_options = ("models",
@@ -50,7 +65,8 @@ format_options = ("models",
                   "coffee cups",
                   "monsters",
                   "satellites",
-                  "remote controls")
+                  "remote controls"
+                  "political parties")
                           
 <<<<<<< HEAD
 connected_options = ("of a",
@@ -67,11 +83,16 @@ adjective_options = ("3D",
                      "elongated",
                      "hand crafted",
                      "tinted",
-                     "hacked",)
+                     "hacked",
+                     "massaged",
+                     "laughing"
+                     "sneering",
+                     "smelly",
+                     "stinky")
 
 thing_options = ("infomorph",
                  "balloon",
-                 "android",
+                 "Android phone",
                  "movie",
                  "ham"
                  "iphone",
@@ -80,7 +101,14 @@ thing_options = ("infomorph",
                  "ipad",
                  "microphone",
                  "stealth bomber",
-                 "data center")
+                 "data center"
+                 "jacket",
+                 "socks",
+                 "crash helmet",
+                 "printer",
+                 "smart phone",
+                 "tablet",
+                 "eZine")
 =======
 
 
