@@ -107,7 +107,7 @@ thing_options = ("infomorph",
                  "balloon",
                  "Android phone",
                  "movie",
-                 "ham"
+                 "ham",
                  "iphone",
                  "building",
                  "little printer",
@@ -121,4 +121,5 @@ thing_options = ("infomorph",
                  "printer",
                  "smart phone",
                  "tablet",
-                 "eZine")
+                 "eZine",
+                 "pony")
