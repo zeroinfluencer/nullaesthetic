@@ -29,7 +29,7 @@ verb_options = ("floating",
                 "puffing",
                 "breathing",
                 "swelling",
-                "jumping"
+                "jumping",
                 "oozing",
                 "hovering",
                 "repelling",
