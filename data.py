@@ -44,8 +44,8 @@ format_options = ("models",
 connected_options = ("of a",
                      "from a",
                      "in a",
-                     "by a ",
-                     "on a ")
+                     "by a",
+                     "on a")
 
 adjective_options = ("3D",
                      "caressing",
