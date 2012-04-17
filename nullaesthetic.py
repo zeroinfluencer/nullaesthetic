@@ -22,6 +22,7 @@
 # dealings in this Software without prior written authorization from Philter
 # Phactory Ltd.
 
+import hashlib
 import logging
 import random
 import re
@@ -73,6 +74,43 @@ def jitter(text):
         if random.random() < 0.1:
             text[i] = upper(text[i])
 
+def md5(text, amount=3):
+    m = hashlib.md5()
+    m.update(text)
+    return '#%s' % (m.hexdigest()[:amount].lower())
+
+verbtrans = {'a':'@', 'e':'3', 'i':'1', 'o':'0', 'u':u'\/'}
+jittertrans = {'a':'@', 'e':'3', 'i':'1', 'l':'|', 'o':'0', 'u':u'\/'}
+jitter_probability = 0.4
+
+def double_vowel_1337(twochars):
+    vowels = twochars.group(0)
+    print vowels
+    return "%s%s" % (vowels[0], verbtrans.get(vowels[1], vowels[1]))
+
+def trans_double_vowel_1337(text):
+    return re.sub(r'[aeiou][aeiou]', double_vowel_1337, text)
+
+def char_1337(char):
+    if random.random() < jitter_probability:
+        return jittertrans.get(char, char)
+    else:
+        return char
+
+def random_hex_color():
+    return  ('#%02X%02X%02X' % (random.randint(0, 256),
+                               random.randint(0, 256),
+                               random.randint(0, 256))).lower()
+
+def color_range():
+    colours = [random_hex_color(), random_hex_color()]
+    colours.sort()
+    return 'colored from %s to %s' % (colours[0], colours[1])
+
+def jitter(text):
+    jittered =  ''.join([char_1337(char) for char in text])
+    return trans_double_vowel_1337(jittered)
+
 def verb():
     return choose_one_of(models.AestheticOptions.get_option('verb'))
 
@@ -95,8 +133,10 @@ def thing():
 #    return maybe_choose_one_of(models.AestheticOptions.get_option('tag'))
 
 def aesthetic_description():
-    items = [verb(), style(), a_format(), connected(), adjective(), thing()]
-    return " ".join(filter(bool, items)) + "."
+    items = [verb(), style(), a_format(), connected(), adjective(), thing(),
+             color_range()]
+    description = " ".join(filter(bool, items)) + "."
+    return "%s %s" % (md5(description), description)
 
 def capitalize_start(string):
     words = string.split()

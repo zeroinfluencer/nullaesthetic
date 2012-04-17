@@ -48,7 +48,7 @@ class NullAesthetic(Prosthetic):
         
         self.post("/1/weavr/post/", {
             "category":"article",
-            "title":"Null Aesthetic",
+            "title":unicode(aesthetic),
             "body":unicode(aesthetic), 
             "keywords":state["emotion"],
         })
