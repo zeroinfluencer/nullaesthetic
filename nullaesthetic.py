@@ -74,7 +74,7 @@ def jitter(text):
         if random.random() < 0.1:
             text[i] = upper(text[i])
 
-def md5(text, amount=3):
+def md5(text, amount=7):
     m = hashlib.md5()
     m.update(text)
     return '#%s' % (m.hexdigest()[:amount].lower())
@@ -105,7 +105,7 @@ def random_hex_color():
 def color_range():
     colours = [random_hex_color(), random_hex_color()]
     colours.sort()
-    return 'colored from %s to %s' % (colours[0], colours[1])
+    return ', colored from %s to %s' % (colours[0], colours[1])
 
 def jitter(text):
     jittered =  ''.join([char_1337(char) for char in text])
