@@ -88,7 +88,7 @@ adjective_options = ("3D",
                      "tinted",
                      "hacked",
                      "massaged",
-                     "laughing"
+                     "laughing",
                      "sneering",
                      "smelly",
                      "stinky",
