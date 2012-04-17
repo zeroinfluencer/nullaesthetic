@@ -35,7 +35,7 @@ verb_options = ("floating",
                 "repelling",
                 "attracting",
                 "wiggly",
-                "upside down"),
+                "upside down")
 
 style_options = ("pixellated",
                  "vectorized",
