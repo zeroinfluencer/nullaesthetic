@@ -41,6 +41,7 @@ format_options = ("models",
                   "portraits",
                   "coffee cups")
                           
+<<<<<<< HEAD
 connected_options = ("of a",
                      "from a",
                      "in a",
@@ -61,3 +62,30 @@ thing_options = ("infomorph",
                  "ham"
                  "iphone",
                  "building")
+=======
+
+
+connected = ("of a",
+                          "from a",
+                          "in a",
+                          "by a ",
+                          "on a ")
+
+adjective = ("3D",
+                          "caressing",
+                          "floating",
+                          "chirpy",
+                          "elongated",
+
+                          "hand crafted")
+
+thing = ("infomorph",
+                          "balloon",
+                          "android",
+                          "movie",
+                          "ham")
+
+
+
+
+>>>>>>> typo
