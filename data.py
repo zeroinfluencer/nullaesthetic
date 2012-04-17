@@ -67,14 +67,13 @@ format_options = ("models",
                   "satellites",
                   "remote controls"
                   "political parties")
-                          
-<<<<<<< HEAD
+
 connected_options = ("of a",
                      "from a",
                      "in a",
                      "by a",
                      "on a",
-                     "stuck to")
+                     "stuck to a")
 
 adjective_options = ("3D",
                      "caressing",
@@ -109,30 +108,3 @@ thing_options = ("infomorph",
                  "smart phone",
                  "tablet",
                  "eZine")
-=======
-
-
-connected = ("of a",
-                          "from a",
-                          "in a",
-                          "by a ",
-                          "on a ")
-
-adjective = ("3D",
-                          "caressing",
-                          "floating",
-                          "chirpy",
-                          "elongated",
-
-                          "hand crafted")
-
-thing = ("infomorph",
-                          "balloon",
-                          "android",
-                          "movie",
-                          "ham")
-
-
-
-
->>>>>>> typo
