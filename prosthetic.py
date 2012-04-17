@@ -50,7 +50,7 @@ class NullAesthetic(Prosthetic):
             "category":"article",
             "title":unicode(aesthetic),
             "body":unicode(aesthetic), 
-            "keywords":state["emotion"],
+            "keywords": "%s nullaesthetic" % state["emotion"],
         })
         
         return unicode(aesthetic)

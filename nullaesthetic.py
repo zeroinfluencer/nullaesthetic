@@ -120,8 +120,11 @@ def style():
 def a_format():
     return choose_one_of(models.AestheticOptions.get_option('format'))
 
-def connected():
-    return choose_one_of(models.AestheticOptions.get_option('connected'))
+def connected(followed):
+    conn = choose_one_of(models.AestheticOptions.get_option('connected'))
+    if followed[0] in 'aeiou':
+        conn = conn + 'n'
+    return conn
 
 def adjective():
     return choose_one_of(models.AestheticOptions.get_option('adjective'))
@@ -133,7 +136,8 @@ def thing():
 #    return maybe_choose_one_of(models.AestheticOptions.get_option('tag'))
 
 def aesthetic_description():
-    items = [verb(), style(), a_format(), connected(), adjective(), thing(),
+    adj = adjective()
+    items = [verb(), style(), a_format(), connected(adj), adj, thing(),
              color_range()]
     description = " ".join(filter(bool, items)) + "."
     return "%s %s" % (md5(description), description)
