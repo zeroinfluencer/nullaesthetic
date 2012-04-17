@@ -35,7 +35,12 @@ verb_options = ("floating",
                 "repelling",
                 "attracting",
                 "wiggly",
-                "upside down")
+                "upside down",
+                "chuckling",
+                "exploding",
+                "melting",
+                "impoding",
+                "anxious")
 
 style_options = ("pixellated",
                  "vectorized",
@@ -56,7 +61,12 @@ style_options = ("pixellated",
                  "bookmarked",
                  "post-digital",
                  "rasterised",
-                 "disjointed")
+                 "disjointed",
+                 "wet",
+                 "stream punk",
+                 "steam punk",
+                 "punked",
+                 "pornographic")
 
 #formats must be pluralised
 format_options = ("models",
@@ -68,7 +78,13 @@ format_options = ("models",
                   "monsters",
                   "satellites",
                   "remote controls",
-                  "political parties")
+                  "political parties",
+                  "chinooks",
+                  "nabaztags",
+                  "dolphins",
+                  "unicorns",
+                  "lamp posts",
+                  "mother boards")
 
 connected_options = ("of a",
                      "from a",
@@ -77,7 +93,16 @@ connected_options = ("of a",
                      "on a",
                      "stuck to a",
                      "bolted to a",
-                     "joined to")
+                     "joined to a",
+                     "attached to a",
+                     "afixed to a",
+                     "jammed into a",
+                     "forced into a",
+                     "inserted into a",
+                     "extracted from a",
+                     "plucked from a",
+                     "exiting from a",
+                     "fleeing a",)
 
 adjective_options = ("3D",
                      "caressing",
@@ -122,4 +147,13 @@ thing_options = ("infomorph",
                  "smart phone",
                  "tablet",
                  "eZine",
-                 "pony")
+                 "pony",
+                 "zx spectrum",
+                 "Mac Air",
+                 "robot",
+                 "face scanner",
+                 "retinal scanner",
+                 "security door",
+                 "droid",
+                 "Death Vader figurine",
+                 "artist")
