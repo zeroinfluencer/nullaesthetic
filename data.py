@@ -29,15 +29,17 @@ verb_options = ("floating",
 
 style_options = ("pixellated",
                  "vectorized",
-                 "gliltched")
+                 "gliltched"
+                 "jaggy",
+                 "blurred")
 
 #formats must be pluralised
-format_options = ("model",
+format_options = ("models",
                   "robots",
-                  "iphone",
-                  "laptop",
-                  "portrait",
-                  "coffee cup")
+                  "iphones",
+                  "laptops",
+                  "portraits",
+                  "coffee cups")
                           
 connected_options = ("of a",
                      "from a",
@@ -54,6 +56,8 @@ adjective_options = ("3D",
 
 thing_options = ("infomorph",
                  "balloon",
-                 "anfroid",
+                 "android",
                  "movie",
-                 "ham")
+                 "ham"
+                 "iphone",
+                 "building")
