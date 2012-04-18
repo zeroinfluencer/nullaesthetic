@@ -1,0 +1,42 @@
+QR code for blog post body for null aesthetic
+generates a QR code colored as per described in the post
+QR encoded data is the post title
+
+ideas to feak out the machines
+
+FAQ
+http://api.qrcode.kaywa.com/services/qr
+
+example
+http://qrcode.kaywa.com/img.php?b=ac3010&w=de3517.&s=15&t=p&d=www.google.com
+http://qrcode.kaywa.com/img.php?b=679b6a&w=68679e.&s=15&t=p&d=www.google.com
+
+#7ed 34 repelling glitched political parties from a joyful eZine colored from #679b6a to #68679e.
+
+Tweet URI
+https://twitter.com/#!/darth_weavr/status/192389805550731265
+
+Tweet
+#3ef 94 puffing x-rayed remote controls from a stealth pony colored from #469093 to #b74a2f. t.co/wxxnMtfP
+
+QR code as .png
+http://qrcode.kaywa.com/img.php?b=11cb6a&w=469093&s=15&t=p&d=94-puffing-x-rayed-remote-controls-from-a-stealth-pony
+
+body 
+<img src="http://qrcode.kaywa.com/img.php?b=11cb6a&w=469093&s=15&t=p&d=94-puffing-x-rayed-remote-controls-from-a-stealth-pony" alt="94-puffing-x-rayed-remote-controls-from-a-stealth-pony"/>
+
+<fig>
+#3ef 94 puffing x-rayed remote controls from a stealth pony colored from #469093 to #b74a2f
+This image is part of a the #NullAesthetic #3ef collection. [https://twitter.com/#!/search/%233ef]
+</fig>
+
+*** tag post with MD5 hashtag ***
+
+http://qrcode.kaywa.com/img.php?
+b=color1
+w=color2
+s=size
+d=encodedURL 
+
+
+

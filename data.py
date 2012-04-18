@@ -86,7 +86,7 @@ format_options = ("models",
                   "lamp posts",
                   "mother boards")
 
-connected_options = ("of a",
+connected_options = ("made by a",
                      "from a",
                      "in a",
                      "by a",

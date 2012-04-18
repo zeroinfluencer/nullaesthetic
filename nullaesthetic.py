@@ -75,10 +75,10 @@ def jitter(text):
         if random.random() < 0.1:
             text[i] = upper(text[i])
 
-def md5(text, amount=7):
+def md5(text, amount=3):
     m = hashlib.md5()
     m.update(text)
-    return '#%s' % (m.hexdigest()[:amount].lower())
+    return '#nA%s' % (m.hexdigest()[:amount].lower())
 
 verbtrans = {'a':'@', 'e':'3', 'i':'1', 'o':'0', 'u':u'\/'}
 jittertrans = {'a':'@', 'e':'3', 'i':'1', 'l':'|', 'o':'0', 'u':u'\/'}
