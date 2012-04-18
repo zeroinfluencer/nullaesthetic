@@ -42,14 +42,17 @@ class NullAesthetic(Prosthetic):
         if not state["awake"]:
             return "Not posting nullaesthetic, asleep"
         
-        aesthetic = nullaesthetic.null_aesthetic()
+        aesthetic, qr_code = nullaesthetic.null_aesthetic()
+
+        body = u'<img src="%s" />' % (qr_code,)
         
         logging.info("posting nullaesthetic: %s" % aesthetic)
+        logging.info("body: %s" % body)
         
         self.post("/1/weavr/post/", {
             "category":"article",
             "title":unicode(aesthetic),
-            "body":unicode(aesthetic), 
+            "body":body, 
             "keywords": "%s nullaesthetic" % state["emotion"],
         })
         

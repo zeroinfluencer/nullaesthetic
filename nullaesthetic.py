@@ -27,6 +27,7 @@ import logging
 import random
 import re
 import string
+import urllib
 
 import models
 
@@ -98,14 +99,9 @@ def char_1337(char):
         return char
 
 def random_hex_color():
-    return  ('#%02X%02X%02X' % (random.randint(0, 256),
+    return  ('%02X%02X%02X' % (random.randint(0, 256),
                                random.randint(0, 256),
                                random.randint(0, 256))).lower()
-
-def color_range():
-    colours = [random_hex_color(), random_hex_color()]
-    colours.sort()
-    return ', colored from %s to %s' % (colours[0], colours[1])
 
 def jitter(text):
     jittered =  ''.join([char_1337(char) for char in text])
@@ -138,12 +134,9 @@ def thing():
 def amount():
     return str(random.randint(2, 99))
 
-def aesthetic_description():
-    adj = adjective()
-    items = [amount(), verb(), style(), a_format(), connected(adj), adj,
-             thing(), color_range()]
-    description = " ".join(filter(bool, items)) + "."
-    return "%s %s" % (md5(description), description)
+def qr_code(text, col1, col2):
+    return 'http://qrcode.kaywa.com/img.php?b=%s&w=%s&s=10&t=p&d=%s' % \
+        (col1, col2, urllib.quote(text))
 
 def capitalize_start(string):
     words = string.split()
@@ -152,5 +145,12 @@ def capitalize_start(string):
 
 def null_aesthetic():
     '''An aesthetic'''
-    description = aesthetic_description()
-    return capitalize_start(description)
+    adj = adjective()
+    cols = [random_hex_color(), random_hex_color()]
+    cols.sort()
+    items = [amount(), verb(), style(), a_format(), connected(adj), adj,
+             thing() + ", colored from ", "#" + cols[0], " to ", "#" + cols[1]]
+    description = capitalize_start(" ".join(filter(bool, items)) + ".")
+    md5_and_description = "%s %s" % (md5(description), description)
+    qr = qr_code(md5_and_description, cols[0], cols[1])
+    return md5_and_description, qr
