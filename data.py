@@ -40,7 +40,12 @@ verb_options = ("floating",
                 "exploding",
                 "melting",
                 "impoding",
-                "anxious")
+                "anxious",
+                "flocking",
+                "burping",
+                "gaping",
+                "wet",
+                "soaking")
 
 style_options = ("pixellated",
                  "vectorized",
@@ -102,6 +107,8 @@ connected_options = ("made by a",
                      "extracted from a",
                      "plucked from a",
                      "exiting from a",
+                     "jumping from a",
+                     "perched on a",
                      "fleeing a",)
 
 adjective_options = ("3D",
