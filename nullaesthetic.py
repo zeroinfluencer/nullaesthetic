@@ -31,6 +31,10 @@ import urllib
 
 import models
 
+verbtrans = {'a':'@', 'e':'3', 'i':'1', 'o':'0', 'u':u'\/'}
+jittertrans = {'a':'@', 'e':'3', 'i':'1', 'l':'|', 'o':'0', 's':'5', 'u':u'\/'}
+jitter_probability = 0.25
+
 def maybe(fun, probability=0.5, default=None):
     """Call fun with args if random(0..1) is less than probability."""
     result = default
@@ -79,10 +83,6 @@ def md5(text, amount=3):
     m = hashlib.md5()
     m.update(text)
     return '#nA%s' % (m.hexdigest()[:amount].lower())
-
-verbtrans = {'a':'@', 'e':'3', 'i':'1', 'o':'0', 'u':u'\/'}
-jittertrans = {'a':'@', 'e':'3', 'i':'1', 'l':'|', 'o':'0', 'u':u'\/'}
-jitter_probability = 0.4
 
 def double_vowel_1337(twochars):
     vowels = twochars.group(0)
@@ -148,9 +148,12 @@ def null_aesthetic():
     adj = adjective()
     cols = [random_hex_color(), random_hex_color()]
     cols.sort()
-    items = [amount(), verb(), style(), a_format(), connected(adj), adj,
-             thing() + ", colored from ", "#" + cols[0], " to ", "#" + cols[1]]
-    description = capitalize_start(" ".join(filter(bool, items)) + ".")
+    items = [amount(), verb(), style(), a_format(), connected(adj), adj,thing()]
+    items_text = " ".join(filter(bool, items))
+    items_1337 = jitter(items_text)
+    items_colored = [items_1337 + ", colored from ", "#" + cols[0], " to ",
+                     "#" + cols[1]]
+    description = capitalize_start(" ".join(items_colored) + ".")
     md5_and_description = "%s %s" % (md5(description), description)
     qr = qr_code(md5_and_description, cols[0], cols[1])
     return md5_and_description, qr
