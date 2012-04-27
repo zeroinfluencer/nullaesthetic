@@ -35,7 +35,7 @@ class NullAesthetic(Prosthetic):
 
     @classmethod
     def time_between_runs(cls):
-        return 3600 * 2
+        return 3600 * 4
 
     def act(self, force=False):
         state = self.get("/1/weavr/state/")
